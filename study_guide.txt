@@ -1,0 +1,46 @@
+To do list for Assessment prep
+
+[] read the regex book
+  Read and take note for 
+    [X] Basic matching
+    [X] character classes
+    [X] character class shortcuts
+    [X] Anchors
+    [] quantifiers
+[] Do challenges exercises
+  [] easy challenges
+  [] medium challenges
+[] do wiki problems
+[] reread the pinned discussions
+
+
+1. Lesson 1
+
+[] reread all of the lectures
+[] reread all the articles in the lecture
+[] reread the pinned discussion posts
+[] read Ginnis notes
+[] do all practice problems for a second time
+[] rebuild all the methods from scratch
+[] redo quiz
+
+2. Lesson 2
+
+[] reread all the lectures
+[] reread all the articles in the lecture
+[] reread the pinned discussion posts
+[] read Ginnis notes
+[] do all practice problems for a second time
+[] read the ruby core tools book and do active recall
+[] do all practice problems for a second times
+[] redo quiz
+[] do challenges
+
+3. Lesson 3
+
+[] reread all the lectures
+[] reread all the articles in the lecture
+[] redo the gemfile packaging
+[] read Ginnis notes
+[] redo quiz
+
