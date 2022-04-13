@@ -1,6 +1,6 @@
 require 'minitest/autorun'
 require 'date'
-require_relative 'meetup'
+require_relative 'meetups'
 
 # Define a class Meetup with a constructor taking a month and a year
 # and a method day(weekday, schedule).
