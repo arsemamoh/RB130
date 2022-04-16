@@ -41,9 +41,6 @@ Algorithm
       - returns a new object that has all the elements in both objects combined
 =end
 
-require 'minitest/autorun'
-# require_relative 'custom_set'
-
 class CustomSet
   attr_accessor :elements
 
