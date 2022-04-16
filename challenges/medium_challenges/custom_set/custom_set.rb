@@ -45,7 +45,7 @@ class CustomSet
   attr_accessor :elements
 
   def initialize(elements = [])
-    @elements = elements.uniq.sort
+    @elements = elements.uniq
   end
 
   def empty?
@@ -70,7 +70,7 @@ class CustomSet
   end
 
   def eql?(other_set)
-    elements == other_set.elements
+    elements.sort == other_set.elements.sort
   end
 
   def add(new_element)
@@ -95,6 +95,6 @@ class CustomSet
 
   def union(other_set)
     union = elements + other_set.elements
-    CustomSet.new(union)
+    CustomSet.new(union.sort)
   end
 end
