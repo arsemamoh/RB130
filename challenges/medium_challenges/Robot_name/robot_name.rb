@@ -26,33 +26,38 @@ Algorithm
   - check if the given argument exists in the generated_name Array
   - if it does return true else return false 
 =end
-require 'securerandom'
+require 'minitest/autorun'
 
 class Robot
-  @@used_names = Array.new
+  attr_writer :name
 
-  def initialize
-    @name = generate_name
-  end
+  @@used_names = []
 
   def name
     @name.nil? ? @name = generate_name : @name
   end
 
   def reset
-    # Robot.new
+    self.name = nil
   end 
 
   def generate_name
-    loop do 
-      name = ""
-      2.times{name << (65 + rand(25)).chr}
-      3.times{name << (0 + rand(9)).to_s}
-      @@used_names.push(name)
-      break if @@used_names.include?(name)
+    name = name_prefix + name_digit
+    if @@used_names.include?(name)
+      generate_name
+    else
+      @@used_names << name
+      return name
     end
-    name
+  end
+
+  private
+
+  def name_prefix
+    ('AA'..'ZZ').to_a.sample
+  end
+
+  def name_digit
+    ('000'..'999').to_a.sample
   end
 end
-
-# p Robot.new.name
